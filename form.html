@@ -1,0 +1,141 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>purnima</title>
+
+<script language="javascript" type="text/javascript">
+function validate()
+{
+if (document.myform.Fastname.value=="")
+{
+    alert("Please provide your Fastname");
+    document.myform.Fastname.focus();
+    return false;
+}
+if (document.myform.Lastname.value=="")
+ {
+     alert("Please provide your Lastname");
+     document.myform.Lastname.focus();
+     return false;
+ }
+ if (document.myform.Fathername.value=="")
+ {
+    alert("please provide your Fathername");
+    document.myform.Fathername.focus();
+    return false;
+ }
+if (document.myform.Address.value=="")
+{
+    alert("please provide you Address");
+    document.myform.Address.focus();
+    return false;
+}
+if (document.myform.date.value=="")
+{
+    alert("please provide you date of birth");
+    document.myform.date.focus();
+    return false;
+}
+if (document.myform.Email.value=="")
+{
+    alert("plase provide you E-mail");
+    document.myform.Email.focus();
+    return false;
+}
+if (document.myform.Nationalitey.value=="")
+{
+    alert("plase provide you Nationalitey");
+    document.myform.Nationalitey.focus();
+    return false;
+}
+if (document.myform.gender.value=="")
+{
+    alert("plase provide you gender");
+    document.myform.gender.focus();
+    return false;
+}
+if (document.myform.PhoneNo.value==""||document.myForm.gnumber.value.length!=10)
+{
+    alert("plase provide you PhoneNo");
+	document.myform.PhoneNo.focus();
+	return false;
+}
+if (document.myform.bs.value=="")
+{
+    alert("plase provide Name and classes of any brother/sister already attending the school");
+	document.myform.bs.focus();
+	return false;
+}
+if (document.myform.Language.value=="")
+{
+    alert("plase provide you Language(s) commonly spoken at home");
+	document.myform.Language.focus();
+	return false;
+}
+if (document.myform.sought.value=="")
+{
+    alert("plase provide you Class in which admission is sought");
+	document.myform.sought.focus();
+	return false;
+}
+
+ return true;
+}
+</script>
+</head>
+<body>
+<center>
+<div style="width:50%; border:3px #E48E0A  solid;">
+    <div style="width:90px; height:100px; border:3px #E48E0A  solid; float:right; background-color: aliceblue; margin-right:30px; margin-top:10px"></div>
+<h1><u>Application for Admission</u></h1>
+
+<p>Please complete each section in <b><u> BLOCK LETTERS </b></u>using Black lnk 
+</p>
+<div style="background-color:#EFEDEA; font-size:20px; margin:2px; text-align:left;">
+<p style="margin-right:40px">Section 1: CHILD'S PERSONAL DETAILS</p>
+</div>
+<form action="#" name="myform" onsubmit="return validate()" style="text-align:left; margin-left:15px">
+1. Fast Name:
+<input type="text" name="Fastname" placeholder="Fast Name" size="40%"><br><br>
+2. Last Name:
+<input type="text" name="Lastname" placeholder="Last Name" size="60%"><br><br>
+3. Father's Name:
+<input type="text" name="Fathername" placeholder="Father Name" size="60%"><br><br>
+4. Address:
+<input type="text" name="Address" placeholder="Address" size="60%"><br><br>
+5. Date of Birth:
+<input type="date" name="date" placeholder="date" size="40%"> 6. E-mail:
+<input type="text" name="Email" placeholder="E-mail" size="30%"><br><br>
+7. Nationalitey:
+<input type="text" name="Nationalitey" placeholder="Nationalitey" size="60%"><br><br>
+8. Gender: Male 
+<input type="radio" name="gender">
+Female 
+<input type="radio" name="gender">
+9. Phone No: 
+<input type="text" name="PhoneNo" placeholder="PhoneNo" size="30%"><br><br>
+10. Name and classes of any brother(s)/sister(s) already attending the school:
+<br><br>
+<input type="text" name="bs" size="80%"><br><br>
+11. Language(s) commonly spoken at home: <input type="text" name="Language" size="35%"><br><br>
+<br>
+<div style="background-color:#EFEDEA; font-size:20px; margin:2px; text-align:left;">
+    Section 2: ACADEMIC DETAILS
+</div><br><br>
+Class in which admission is sought: <input type="text" name="sought" size="40%"><br><br>
+<center><input type="reset" value="RESET">&nbsp;<input type="submit" value="SUBMIT"></center><br><br>
+
+
+
+
+</form>
+</div>
+</center>
+
+
+
+
+
+<body>
+</html>
